@@ -1,0 +1,2 @@
+comparison,margin_pct,mean_relative_difference_pct,one_sided_upper_95_pct,noninferior,n_weeks,block_length_weeks
+eact_mpc_vs_static_robust_mpc,1.0,0.08541143746302889,0.15984447458010004,True,156,4

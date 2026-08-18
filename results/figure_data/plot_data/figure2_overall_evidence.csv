@@ -1,0 +1,11 @@
+panel,metric,condition,value,ci95_low,ci95_high,n,unit,ci_type
+a,mean_abs_coverage_error_pp,Static bounds,5.1824722731,,,75,percentage points,none
+a,mean_abs_coverage_error_pp,Adaptive bounds,0.514445970696,,,75,percentage points,none
+b,objective_increase_pct,Seasonal held-out,0.279888938897,,0.642621721737,60,%,one-sided 95% upper
+b,objective_increase_pct,Continuous annual,0.085411437463,,0.15984447458,156,%,one-sided 95% upper
+c,p95_reduction_c,No imposed shift,0.0773125283194,0.059087483632,0.0950259845271,60,degC,paired hierarchical bootstrap 95%
+c,p95_reduction_c,Persistent bias,0.139903428566,0.106169803297,0.173848040217,60,degC,paired hierarchical bootstrap 95%
+c,p95_reduction_c,Continuous annual,0.107480543762,0.10196551677,0.113000401897,156,degC,moving-block bootstrap 95%
+d,total_energy_increase_pct,No imposed shift,0.0172933643058,-0.122441986563,0.122590608817,60,%,paired hierarchical bootstrap 95%
+d,total_energy_increase_pct,Persistent bias,0.329567732825,0.15499832774,0.486962655803,60,%,paired hierarchical bootstrap 95%
+d,total_energy_increase_pct,Continuous annual,0.096580699529,-0.137264333177,0.388829802197,156,%,moving-block bootstrap 95%

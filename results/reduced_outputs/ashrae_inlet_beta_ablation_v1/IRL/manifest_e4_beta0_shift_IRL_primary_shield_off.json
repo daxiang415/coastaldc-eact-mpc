@@ -1,0 +1,151 @@
+{
+  "schema_version": 2,
+  "status": "complete",
+  "created_utc": "2026-07-25T11:35:29.232068+00:00",
+  "command": [
+    "python",
+    "scripts/../scripts/evaluate_eact_mpc.py",
+    "--countries",
+    "IRL",
+    "--controllers",
+    "eact",
+    "--data-dir",
+    "scripts/../data/processed_multiyear/2025",
+    "--forecast-dir",
+    "scripts/../results/causal_forecasts_v3_gated_bias",
+    "--episode-hours",
+    "168",
+    "--start-timestamps",
+    "2025-01-15T00:00:00",
+    "2025-04-15T00:00:00",
+    "2025-07-15T00:00:00",
+    "2025-10-15T00:00:00",
+    "--horizon",
+    "24",
+    "--maxiter",
+    "20",
+    "--block-hours",
+    "6",
+    "--gamma",
+    "0.995",
+    "--confidence",
+    "0.90",
+    "--constraint-tolerance",
+    "0.0001",
+    "--intervention-weight",
+    "0.0",
+    "--adaptive-beta-floor",
+    "0.0",
+    "--weight-grid",
+    "1.0",
+    "--weight-co2",
+    "2.0",
+    "--weight-total",
+    "0.2",
+    "--weight-smooth",
+    "0.5",
+    "--forecast-stress",
+    "adverse_bias",
+    "--forecast-stress-scale",
+    "1.0",
+    "--forecast-stress-start-step",
+    "0",
+    "--forecast-stress-seed",
+    "20260717",
+    "--progress-every",
+    "168",
+    "--out-dir",
+    "results/ashrae_inlet_beta_ablation_v1\\IRL",
+    "--tag",
+    "e4_beta0_shift_IRL_primary_shield_off",
+    "--no-oracle-workload-projection",
+    "--no-thermal-safety-shield"
+  ],
+  "configuration": {
+    "countries": [
+      "IRL"
+    ],
+    "controllers": [
+      "eact"
+    ],
+    "episode_hours": 168,
+    "continuous_year": false,
+    "horizon": 24,
+    "maxiter": 20,
+    "block_hours": 6,
+    "gamma": 0.995,
+    "confidence": 0.9,
+    "constraint_tolerance": 0.0001,
+    "intervention_weight": 0.0,
+    "weight_grid": 1.0,
+    "weight_co2": 2.0,
+    "weight_total": 0.2,
+    "weight_smooth": 0.5,
+    "adaptive_beta_floor": 0.0,
+    "oracle_workload_projection": false,
+    "thermal_safety_shield": false,
+    "thermal_metric_schema": "ashrae_a1_inlet_v1",
+    "thermal_state_semantics": "representative_lumped_it_equipment_inlet_air_temperature_proxy",
+    "t_inlet_recommended_min_c": 18.0,
+    "t_inlet_recommended_max_c": 27.0,
+    "t_inlet_allowable_min_c": 15.0,
+    "t_inlet_allowable_max_c": 32.0,
+    "forecast_stress": "adverse_bias",
+    "forecast_stress_scale": 1.0,
+    "forecast_stress_start_step": 0,
+    "forecast_stress_seed": 20260717,
+    "data_dir": "data/processed_multiyear/2025",
+    "forecast_dir": "results/causal_forecasts_v3_gated_bias",
+    "tag": "e4_beta0_shift_IRL_primary_shield_off"
+  },
+  "starts_by_country": {
+    "IRL": [
+      336,
+      2496,
+      4680,
+      6888
+    ]
+  },
+  "inputs": [
+    {
+      "path": "data/processed_multiyear/2025/hourly_inputs_IRL.csv",
+      "exists": true,
+      "size_bytes": 921443,
+      "sha256": "505940a5a2c6dc3bfecbacd32c4201ebecd3f0fdd358d65d5c292b5d58d6789f"
+    },
+    {
+      "path": "results/causal_forecasts_v3_gated_bias/causal_ridge_IRL.npz",
+      "exists": true,
+      "size_bytes": 33405,
+      "sha256": "4c950a2ef42fdb224dcd8b6fc1468a77376c9dbc5e79dffec18b2c9a37fadaac"
+    },
+    {
+      "path": "results/causal_forecasts_v3_gated_bias/calibration_residuals_IRL.npz",
+      "exists": true,
+      "size_bytes": 661601,
+      "sha256": "d0d2d014042fc8410c82b299af9357d6048f030d58519b3094b25699e0899bcf"
+    }
+  ],
+  "outputs": {
+    "summary": {
+      "path": "results/ashrae_inlet_beta_ablation_v1/IRL/summary_e4_beta0_shift_IRL_primary_shield_off.csv",
+      "rows": 1
+    },
+    "episodes": {
+      "path": "results/ashrae_inlet_beta_ablation_v1/IRL/episodes_e4_beta0_shift_IRL_primary_shield_off.csv",
+      "rows": 4
+    },
+    "weekly": {
+      "path": "results/ashrae_inlet_beta_ablation_v1/IRL/weekly_e4_beta0_shift_IRL_primary_shield_off.csv",
+      "rows": 4
+    },
+    "hourly": {
+      "path": "results/ashrae_inlet_beta_ablation_v1/IRL/hourly_e4_beta0_shift_IRL_primary_shield_off.csv",
+      "rows": 672
+    },
+    "solver": {
+      "path": "results/ashrae_inlet_beta_ablation_v1/IRL/solver_e4_beta0_shift_IRL_primary_shield_off.csv",
+      "rows": 672
+    }
+  }
+}

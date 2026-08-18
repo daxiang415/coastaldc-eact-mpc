@@ -1,0 +1,4 @@
+scenario,algorithm,n_control_steps,accepted_plan_rate,rejected_plan_count,solver_convergence_rate,fallback_rate,shifted_plan_fallbacks,safe_recovery_fallbacks,rule_based_fallbacks,mean_solve_time_s,p95_solve_time_s,min_selected_candidate_constraint,min_accepted_constraint
+none,eact_mpc,26208,0.9998855311355311,3,0.9648962148962149,0.00011446886446886447,3,0,0,0.6047174793577155,1.5269093149690875,-0.0714967126037151,-9.969339371806996e-05
+none,nominal_causal_mpc,26208,1.0,0,0.9399038461538461,0.0,0,0,0,0.646274455712288,1.90056296493276,-9.974564757797566e-05,-9.974564757797566e-05
+none,static_robust_mpc,26208,1.0,0,0.9721077533577533,0.0,0,0,0,0.6032149865460958,1.3713844999787383,-9.854132305164852e-05,-9.854132305164852e-05

@@ -1,0 +1,2 @@
+status,n_new_manifests,n_new_controller_weeks,n_reused_primary_weeks,n_total_controller_weeks,thermal_metric_schema
+passed,24,192,48,240,ashrae_a1_inlet_v1

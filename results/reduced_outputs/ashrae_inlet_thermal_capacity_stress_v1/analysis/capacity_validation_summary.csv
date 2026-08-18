@@ -1,0 +1,2 @@
+status,n_manifests,n_controller_weeks,n_controller_hours,n_solver_rows,n_capacity_levels,n_forecast_conditions,thermal_metric_schema
+passed,18,216,36288,36288,3,2,ashrae_a1_inlet_v1

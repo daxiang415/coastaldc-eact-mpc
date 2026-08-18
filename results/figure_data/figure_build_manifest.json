@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "backend": "Python matplotlib",
+  "figure_width_mm": 183.0,
+  "style": "Nature-inspired white-background multi-panel scientific figures",
+  "data_files": [
+    {
+      "file": "plot_data/figure1_methodological_framework.csv",
+      "rows": 13,
+      "sha256": "bae22bceaab43f57e2b249d00caf6d69631e59cb4dfa513a93fa9a338eaa72fb"
+    },
+    {
+      "file": "plot_data/figure2_overall_evidence.csv",
+      "rows": 10,
+      "sha256": "2e432caa208df15495c5a96c90f5fb8e102e80dedf303955f7c2da6e6c8999d6"
+    },
+    {
+      "file": "plot_data/figure3_country_season.csv",
+      "rows": 240,
+      "sha256": "648814478a20a8b013810f1f8ef473cc996f1b3214642b4e031b92df65a1f86e"
+    },
+    {
+      "file": "plot_data/figure4_capacity_stress.csv",
+      "rows": 33,
+      "sha256": "3bf19bd5d50e4e63363a52e840cee431a0ac2bbaeefcb2075375788ac36fa87b"
+    },
+    {
+      "file": "plot_data/figure5_representative_trajectory.csv",
+      "rows": 504,
+      "sha256": "e73e4f0e944647b406655e72e399da1c4c729da7cf832eeac41edd29d8b88fe6"
+    },
+    {
+      "file": "plot_data/figure6_mechanism_robustness.csv",
+      "rows": 24,
+      "sha256": "a31a454bf4b991167f8defec78b8ea594c94cd46eaacf57aa646d1cce04a8495"
+    }
+  ],
+  "outputs": {
+    "figure1_methodological_framework": [
+      "output/figure1_methodological_framework.pdf",
+      "output/figure1_methodological_framework.svg",
+      "output/figure1_methodological_framework.png",
+      "output/figure1_methodological_framework.tiff"
+    ],
+    "figure2_overall_evidence": [
+      "output/figure2_overall_evidence.pdf",
+      "output/figure2_overall_evidence.svg",
+      "output/figure2_overall_evidence.png",
+      "output/figure2_overall_evidence.tiff"
+    ],
+    "figure3_country_season": [
+      "output/figure3_country_season.pdf",
+      "output/figure3_country_season.svg",
+      "output/figure3_country_season.png",
+      "output/figure3_country_season.tiff"
+    ],
+    "figure4_capacity_stress": [
+      "output/figure4_capacity_stress.pdf",
+      "output/figure4_capacity_stress.svg",
+      "output/figure4_capacity_stress.png",
+      "output/figure4_capacity_stress.tiff"
+    ],
+    "figure5_representative_trajectory": [
+      "output/figure5_representative_trajectory.pdf",
+      "output/figure5_representative_trajectory.svg",
+      "output/figure5_representative_trajectory.png",
+      "output/figure5_representative_trajectory.tiff"
+    ],
+    "figure6_mechanism_robustness": [
+      "output/figure6_mechanism_robustness.pdf",
+      "output/figure6_mechanism_robustness.svg",
+      "output/figure6_mechanism_robustness.png",
+      "output/figure6_mechanism_robustness.tiff"
+    ]
+  }
+}

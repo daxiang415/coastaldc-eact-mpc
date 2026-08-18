@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "status": "complete",
+  "created_utc": "2026-07-25T11:17:08.762755+00:00",
+  "seasonal_root": "results/ashrae_inlet_seasonal_v1",
+  "bootstrap_samples": 20000,
+  "noninferiority_margin_pct": 1.0,
+  "thermal_metric_schema": "ashrae_a1_inlet_v1",
+  "inputs": [
+    "results/ashrae_inlet_seasonal_v1/e1_no_shift/AUS/manifest_e1_no_shift_AUS_b0p10_primary_shield_off.json",
+    "results/ashrae_inlet_seasonal_v1/e1_no_shift/CAN/manifest_e1_no_shift_CAN_b0p10_primary_shield_off.json",
+    "results/ashrae_inlet_seasonal_v1/e1_no_shift/CHN/manifest_e1_no_shift_CHN_b0p10_primary_shield_off.json",
+    "results/ashrae_inlet_seasonal_v1/e1_no_shift/GBR/manifest_e1_no_shift_GBR_b0p10_primary_shield_off.json",
+    "results/ashrae_inlet_seasonal_v1/e1_no_shift/IDN/manifest_e1_no_shift_IDN_b0p10_primary_shield_off.json",
+    "results/ashrae_inlet_seasonal_v1/e1_no_shift/IND/manifest_e1_no_shift_IND_b0p10_primary_shield_off.json",
+    "results/ashrae_inlet_seasonal_v1/e1_no_shift/IRL/manifest_e1_no_shift_IRL_b0p10_primary_shield_off.json",
+    "results/ashrae_inlet_seasonal_v1/e1_no_shift/JPN/manifest_e1_no_shift_JPN_b0p10_primary_shield_off.json",
+    "results/ashrae_inlet_seasonal_v1/e1_no_shift/KOR/manifest_e1_no_shift_KOR_b0p10_primary_shield_off.json",
+    "results/ashrae_inlet_seasonal_v1/e1_no_shift/MYS/manifest_e1_no_shift_MYS_b0p10_primary_shield_off.json",
+    "results/ashrae_inlet_seasonal_v1/e1_no_shift/NLD/manifest_e1_no_shift_NLD_b0p10_primary_shield_off.json",
+    "results/ashrae_inlet_seasonal_v1/e1_no_shift/NOR/manifest_e1_no_shift_NOR_b0p10_primary_shield_off.json",
+    "results/ashrae_inlet_seasonal_v1/e1_no_shift/PRT/manifest_e1_no_shift_PRT_b0p10_primary_shield_off.json",
+    "results/ashrae_inlet_seasonal_v1/e1_no_shift/SGP/manifest_e1_no_shift_SGP_b0p10_primary_shield_off.json",
+    "results/ashrae_inlet_seasonal_v1/e1_no_shift/USA/manifest_e1_no_shift_USA_b0p10_primary_shield_off.json",
+    "results/ashrae_inlet_seasonal_v1/e2_shift/AUS/manifest_e2_shift_AUS_b0p10_primary_shield_off.json",
+    "results/ashrae_inlet_seasonal_v1/e2_shift/CAN/manifest_e2_shift_CAN_b0p10_primary_shield_off.json",
+    "results/ashrae_inlet_seasonal_v1/e2_shift/CHN/manifest_e2_shift_CHN_b0p10_primary_shield_off.json",
+    "results/ashrae_inlet_seasonal_v1/e2_shift/GBR/manifest_e2_shift_GBR_b0p10_primary_shield_off.json",
+    "results/ashrae_inlet_seasonal_v1/e2_shift/IDN/manifest_e2_shift_IDN_b0p10_primary_shield_off.json",
+    "results/ashrae_inlet_seasonal_v1/e2_shift/IND/manifest_e2_shift_IND_b0p10_primary_shield_off.json",
+    "results/ashrae_inlet_seasonal_v1/e2_shift/IRL/manifest_e2_shift_IRL_b0p10_primary_shield_off.json",
+    "results/ashrae_inlet_seasonal_v1/e2_shift/JPN/manifest_e2_shift_JPN_b0p10_primary_shield_off.json",
+    "results/ashrae_inlet_seasonal_v1/e2_shift/KOR/manifest_e2_shift_KOR_b0p10_primary_shield_off.json",
+    "results/ashrae_inlet_seasonal_v1/e2_shift/MYS/manifest_e2_shift_MYS_b0p10_primary_shield_off.json",
+    "results/ashrae_inlet_seasonal_v1/e2_shift/NLD/manifest_e2_shift_NLD_b0p10_primary_shield_off.json",
+    "results/ashrae_inlet_seasonal_v1/e2_shift/NOR/manifest_e2_shift_NOR_b0p10_primary_shield_off.json",
+    "results/ashrae_inlet_seasonal_v1/e2_shift/PRT/manifest_e2_shift_PRT_b0p10_primary_shield_off.json",
+    "results/ashrae_inlet_seasonal_v1/e2_shift/SGP/manifest_e2_shift_SGP_b0p10_primary_shield_off.json",
+    "results/ashrae_inlet_seasonal_v1/e2_shift/USA/manifest_e2_shift_USA_b0p10_primary_shield_off.json"
+  ],
+  "outputs": {
+    "seasonal_validation_summary.csv": {
+      "path": "results/ashrae_inlet_seasonal_v1/analysis/seasonal_validation_summary.csv",
+      "rows": 1
+    },
+    "seasonal_absolute_summary.csv": {
+      "path": "results/ashrae_inlet_seasonal_v1/analysis/seasonal_absolute_summary.csv",
+      "rows": 6
+    },
+    "seasonal_cost_comparisons.csv": {
+      "path": "results/ashrae_inlet_seasonal_v1/analysis/seasonal_cost_comparisons.csv",
+      "rows": 16
+    },
+    "seasonal_thermal_comparisons.csv": {
+      "path": "results/ashrae_inlet_seasonal_v1/analysis/seasonal_thermal_comparisons.csv",
+      "rows": 40
+    },
+    "seasonal_solver_summary.csv": {
+      "path": "results/ashrae_inlet_seasonal_v1/analysis/seasonal_solver_summary.csv",
+      "rows": 6
+    },
+    "seasonal_no_shift_noninferiority.csv": {
+      "path": "results/ashrae_inlet_seasonal_v1/analysis/seasonal_no_shift_noninferiority.csv",
+      "rows": 1
+    }
+  }
+}

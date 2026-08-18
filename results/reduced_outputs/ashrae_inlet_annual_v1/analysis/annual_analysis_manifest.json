@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "status": "complete",
+  "created_utc": "2026-07-25T14:34:33.550036+00:00",
+  "annual_root": "results/ashrae_inlet_annual_v1",
+  "bootstrap_samples": 20000,
+  "thermal_metric_schema": "ashrae_a1_inlet_v1",
+  "inputs": [
+    "results/ashrae_inlet_annual_v1/CHN/eact/manifest_e3_annual_CHN_eact_b0p10_primary_shield_on.json",
+    "results/ashrae_inlet_annual_v1/CHN/nominal/manifest_e3_annual_CHN_nominal_b0p10_primary_shield_on.json",
+    "results/ashrae_inlet_annual_v1/CHN/static/manifest_e3_annual_CHN_static_b0p10_primary_shield_on.json",
+    "results/ashrae_inlet_annual_v1/JPN/eact/manifest_e3_annual_JPN_eact_b0p10_primary_shield_on.json",
+    "results/ashrae_inlet_annual_v1/JPN/nominal/manifest_e3_annual_JPN_nominal_b0p10_primary_shield_on.json",
+    "results/ashrae_inlet_annual_v1/JPN/static/manifest_e3_annual_JPN_static_b0p10_primary_shield_on.json",
+    "results/ashrae_inlet_annual_v1/NOR/eact/manifest_e3_annual_NOR_eact_b0p10_primary_shield_on.json",
+    "results/ashrae_inlet_annual_v1/NOR/nominal/manifest_e3_annual_NOR_nominal_b0p10_primary_shield_on.json",
+    "results/ashrae_inlet_annual_v1/NOR/static/manifest_e3_annual_NOR_static_b0p10_primary_shield_on.json"
+  ],
+  "outputs": {
+    "annual_validation_summary.csv": {
+      "path": "results/ashrae_inlet_annual_v1/analysis/annual_validation_summary.csv",
+      "rows": 1
+    },
+    "annual_absolute_summary.csv": {
+      "path": "results/ashrae_inlet_annual_v1/analysis/annual_absolute_summary.csv",
+      "rows": 3
+    },
+    "annual_cost_comparisons.csv": {
+      "path": "results/ashrae_inlet_annual_v1/analysis/annual_cost_comparisons.csv",
+      "rows": 8
+    },
+    "annual_noninferiority.csv": {
+      "path": "results/ashrae_inlet_annual_v1/analysis/annual_noninferiority.csv",
+      "rows": 1
+    },
+    "annual_thermal_comparisons.csv": {
+      "path": "results/ashrae_inlet_annual_v1/analysis/annual_thermal_comparisons.csv",
+      "rows": 20
+    },
+    "annual_solver_summary.csv": {
+      "path": "results/ashrae_inlet_annual_v1/analysis/annual_solver_summary.csv",
+      "rows": 3
+    }
+  }
+}

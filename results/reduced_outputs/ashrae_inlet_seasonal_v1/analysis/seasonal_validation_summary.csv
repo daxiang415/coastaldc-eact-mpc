@@ -1,0 +1,2 @@
+status,n_countries,n_manifests,n_controller_weeks,n_controller_hours,n_solver_rows,thermal_metric_schema
+passed,15,30,360,60480,60480,ashrae_a1_inlet_v1

@@ -1,0 +1,2 @@
+status,n_manifests,n_trajectories,n_weekly_rows,n_hourly_rows,n_solver_rows,thermal_metric_schema
+passed,9,9,468,78624,78624,ashrae_a1_inlet_v1

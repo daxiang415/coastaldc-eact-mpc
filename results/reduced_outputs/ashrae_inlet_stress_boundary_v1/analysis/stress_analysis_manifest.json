@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "status": "complete",
+  "created_utc": "2026-07-25T15:04:31.932520+00:00",
+  "stress_root": "results/ashrae_inlet_stress_boundary_v1",
+  "seasonal_root": "results/ashrae_inlet_seasonal_v1",
+  "bootstrap_samples": 20000,
+  "thermal_metric_schema": "ashrae_a1_inlet_v1",
+  "inputs": [
+    "results/ashrae_inlet_stress_boundary_v1/b0p10/wg1p00_wc2p00_wt0p20_ws0p50/cstatic-eact/adverse_bias/s0p50/CHN/manifest_stress_adverse_bias_s0p50_b0p10_wg1p00_wc2p00_wt0p20_ws0p50_cstatic-eact_CHN_shield_off.json",
+    "results/ashrae_inlet_stress_boundary_v1/b0p10/wg1p00_wc2p00_wt0p20_ws0p50/cstatic-eact/adverse_bias/s0p50/JPN/manifest_stress_adverse_bias_s0p50_b0p10_wg1p00_wc2p00_wt0p20_ws0p50_cstatic-eact_JPN_shield_off.json",
+    "results/ashrae_inlet_stress_boundary_v1/b0p10/wg1p00_wc2p00_wt0p20_ws0p50/cstatic-eact/adverse_bias/s0p50/NOR/manifest_stress_adverse_bias_s0p50_b0p10_wg1p00_wc2p00_wt0p20_ws0p50_cstatic-eact_NOR_shield_off.json",
+    "results/ashrae_inlet_stress_boundary_v1/b0p10/wg1p00_wc2p00_wt0p20_ws0p50/cstatic-eact/adverse_bias/s2p00/CHN/manifest_stress_adverse_bias_s2p00_b0p10_wg1p00_wc2p00_wt0p20_ws0p50_cstatic-eact_CHN_shield_off.json",
+    "results/ashrae_inlet_stress_boundary_v1/b0p10/wg1p00_wc2p00_wt0p20_ws0p50/cstatic-eact/adverse_bias/s2p00/JPN/manifest_stress_adverse_bias_s2p00_b0p10_wg1p00_wc2p00_wt0p20_ws0p50_cstatic-eact_JPN_shield_off.json",
+    "results/ashrae_inlet_stress_boundary_v1/b0p10/wg1p00_wc2p00_wt0p20_ws0p50/cstatic-eact/adverse_bias/s2p00/NOR/manifest_stress_adverse_bias_s2p00_b0p10_wg1p00_wc2p00_wt0p20_ws0p50_cstatic-eact_NOR_shield_off.json",
+    "results/ashrae_inlet_stress_boundary_v1/b0p10/wg1p00_wc2p00_wt0p20_ws0p50/cstatic-eact/combined/s1p00/CHN/manifest_stress_combined_s1p00_b0p10_wg1p00_wc2p00_wt0p20_ws0p50_cstatic-eact_CHN_shield_off.json",
+    "results/ashrae_inlet_stress_boundary_v1/b0p10/wg1p00_wc2p00_wt0p20_ws0p50/cstatic-eact/combined/s1p00/JPN/manifest_stress_combined_s1p00_b0p10_wg1p00_wc2p00_wt0p20_ws0p50_cstatic-eact_JPN_shield_off.json",
+    "results/ashrae_inlet_stress_boundary_v1/b0p10/wg1p00_wc2p00_wt0p20_ws0p50/cstatic-eact/combined/s1p00/NOR/manifest_stress_combined_s1p00_b0p10_wg1p00_wc2p00_wt0p20_ws0p50_cstatic-eact_NOR_shield_off.json",
+    "results/ashrae_inlet_stress_boundary_v1/b0p10/wg1p00_wc2p00_wt0p20_ws0p50/cstatic-eact/noise/s1p00/CHN/manifest_stress_noise_s1p00_b0p10_wg1p00_wc2p00_wt0p20_ws0p50_cstatic-eact_CHN_shield_off.json",
+    "results/ashrae_inlet_stress_boundary_v1/b0p10/wg1p00_wc2p00_wt0p20_ws0p50/cstatic-eact/noise/s1p00/JPN/manifest_stress_noise_s1p00_b0p10_wg1p00_wc2p00_wt0p20_ws0p50_cstatic-eact_JPN_shield_off.json",
+    "results/ashrae_inlet_stress_boundary_v1/b0p10/wg1p00_wc2p00_wt0p20_ws0p50/cstatic-eact/noise/s1p00/NOR/manifest_stress_noise_s1p00_b0p10_wg1p00_wc2p00_wt0p20_ws0p50_cstatic-eact_NOR_shield_off.json"
+  ],
+  "outputs": {
+    "stress_validation_summary.csv": {
+      "path": "results/ashrae_inlet_stress_boundary_v1/analysis/stress_validation_summary.csv",
+      "rows": 1
+    },
+    "stress_paired_comparisons.csv": {
+      "path": "results/ashrae_inlet_stress_boundary_v1/analysis/stress_paired_comparisons.csv",
+      "rows": 84
+    },
+    "stress_core_summary.csv": {
+      "path": "results/ashrae_inlet_stress_boundary_v1/analysis/stress_core_summary.csv",
+      "rows": 18
+    }
+  }
+}

@@ -1,0 +1,34 @@
+panel,metric,condition,availability_pct,controller,value,ci95_low,ci95_high,n,unit
+a,event_hours_total,No shift,100,nominal_causal_mpc,0,,,12,h
+a,event_hours_total,No shift,100,static_robust_mpc,0,,,12,h
+a,event_hours_total,No shift,100,eact_mpc,0,,,12,h
+c,p95_reduction_c,No shift,100,eact_mpc_vs_static_robust_mpc,0.132478140542,0.124000262275,0.140393637816,12,degC
+d,total_energy_increase_pct,No shift,100,eact_mpc_vs_static_robust_mpc,0.299818631291,0.0653468305309,0.530215919363,12,%
+a,event_hours_total,No shift,75,nominal_causal_mpc,1,,,12,h
+a,event_hours_total,No shift,75,static_robust_mpc,0,,,12,h
+a,event_hours_total,No shift,75,eact_mpc,0,,,12,h
+c,p95_reduction_c,No shift,75,eact_mpc_vs_static_robust_mpc,0.146247605744,0.108026144236,0.16650931072,12,degC
+d,total_energy_increase_pct,No shift,75,eact_mpc_vs_static_robust_mpc,0.28976495481,0.0803601944822,0.518533426273,12,%
+a,event_hours_total,No shift,50,nominal_causal_mpc,30,,,12,h
+a,event_hours_total,No shift,50,static_robust_mpc,7,,,12,h
+a,event_hours_total,No shift,50,eact_mpc,7,,,12,h
+c,p95_reduction_c,No shift,50,eact_mpc_vs_static_robust_mpc,0.169773381843,0.0955288219555,0.221482992358,12,degC
+d,total_energy_increase_pct,No shift,50,eact_mpc_vs_static_robust_mpc,0.385176198746,0.175821599346,0.620879469459,12,%
+a,event_hours_total,Persistent bias,100,nominal_causal_mpc,2,,,12,h
+a,event_hours_total,Persistent bias,100,static_robust_mpc,0,,,12,h
+a,event_hours_total,Persistent bias,100,eact_mpc,0,,,12,h
+c,p95_reduction_c,Persistent bias,100,eact_mpc_vs_static_robust_mpc,0.0825247023661,0.022811851086,0.14816879437,12,degC
+d,total_energy_increase_pct,Persistent bias,100,eact_mpc_vs_static_robust_mpc,0.167836212476,-0.122742161836,0.503126487482,12,%
+a,event_hours_total,Persistent bias,75,nominal_causal_mpc,20,,,12,h
+a,event_hours_total,Persistent bias,75,static_robust_mpc,5,,,12,h
+a,event_hours_total,Persistent bias,75,eact_mpc,1,,,12,h
+c,p95_reduction_c,Persistent bias,75,eact_mpc_vs_static_robust_mpc,0.0959511576272,0.0376785424086,0.157390829997,12,degC
+d,total_energy_increase_pct,Persistent bias,75,eact_mpc_vs_static_robust_mpc,0.232167168175,-0.0459712223547,0.570178963788,12,%
+a,event_hours_total,Persistent bias,50,nominal_causal_mpc,185,,,12,h
+b,degree_hours_total,Persistent bias,50,nominal_causal_mpc,206.420759264,,,12,degC h
+a,event_hours_total,Persistent bias,50,static_robust_mpc,45,,,12,h
+b,degree_hours_total,Persistent bias,50,static_robust_mpc,18.1816740706,,,12,degC h
+a,event_hours_total,Persistent bias,50,eact_mpc,7,,,12,h
+b,degree_hours_total,Persistent bias,50,eact_mpc,1.50001544747,,,12,degC h
+c,p95_reduction_c,Persistent bias,50,eact_mpc_vs_static_robust_mpc,0.120437466521,0.00415356000346,0.26426832781,12,degC
+d,total_energy_increase_pct,Persistent bias,50,eact_mpc_vs_static_robust_mpc,0.588293085525,0.38944710476,0.817979071583,12,%

@@ -1,0 +1,325 @@
+{
+  "schema_version": 1,
+  "status": "complete",
+  "created_utc": "2026-07-24T09:03:36.161413+00:00",
+  "command": [
+    "python",
+    "scripts/evaluate_causal_forecasts.py",
+    "--horizon",
+    "24",
+    "--adaptive-beta-floor",
+    "0.10",
+    "--out-dir",
+    "results/causal_forecast_evaluation_final_v1",
+    "--tag",
+    "all15_2025_beta010"
+  ],
+  "configuration": {
+    "countries": [
+      "CHN",
+      "USA",
+      "JPN",
+      "AUS",
+      "NOR",
+      "IND",
+      "PRT",
+      "MYS",
+      "GBR",
+      "SGP",
+      "KOR",
+      "IDN",
+      "NLD",
+      "IRL",
+      "CAN"
+    ],
+    "horizon": 24,
+    "start_hour": 0,
+    "hours": null,
+    "adaptive_beta_floor": 0.1,
+    "data_dir": "data/processed_multiyear/2025",
+    "forecast_dir": "results/causal_forecasts_v3_gated_bias",
+    "tag": "all15_2025_beta010"
+  },
+  "inputs": [
+    {
+      "path": "data/processed_multiyear/2025/hourly_inputs_CHN.csv",
+      "exists": true,
+      "size_bytes": 831345,
+      "sha256": "a06a2300854d175025d9e2aef494249f806fcfb2e5ca82d13cd7546a1b66647b"
+    },
+    {
+      "path": "results/causal_forecasts_v3_gated_bias/causal_ridge_CHN.npz",
+      "exists": true,
+      "size_bytes": 33564,
+      "sha256": "bca21cba82694f4c15237f54bf8b3267ef99a08f4331d3c72f9c345a5d76162e"
+    },
+    {
+      "path": "results/causal_forecasts_v3_gated_bias/calibration_residuals_CHN.npz",
+      "exists": true,
+      "size_bytes": 662276,
+      "sha256": "997462fb52222c3361dae8422353e700ec71d7a32ad7635e89e3ed810e894a71"
+    },
+    {
+      "path": "data/processed_multiyear/2025/hourly_inputs_USA.csv",
+      "exists": true,
+      "size_bytes": 819730,
+      "sha256": "65228f2cd893cf7b332e2fedb119330aa5942235921c031c983979c1adfa35aa"
+    },
+    {
+      "path": "results/causal_forecasts_v3_gated_bias/causal_ridge_USA.npz",
+      "exists": true,
+      "size_bytes": 33647,
+      "sha256": "871f3558f8dab6b9d03054a6d070ddb1660d0729136a14819b517ad511059a2d"
+    },
+    {
+      "path": "results/causal_forecasts_v3_gated_bias/calibration_residuals_USA.npz",
+      "exists": true,
+      "size_bytes": 660485,
+      "sha256": "c3b6dad3aafab98bcf90a8255b9926603d38088c4b9fc323b5aa0a04106f0a20"
+    },
+    {
+      "path": "data/processed_multiyear/2025/hourly_inputs_JPN.csv",
+      "exists": true,
+      "size_bytes": 936039,
+      "sha256": "1e08f357e9228d56f19609dbf551c8bc4a3b9889fdcd509cfe76d4c322245123"
+    },
+    {
+      "path": "results/causal_forecasts_v3_gated_bias/causal_ridge_JPN.npz",
+      "exists": true,
+      "size_bytes": 33618,
+      "sha256": "2a77d3b4bc74b85b128f7765b62371393a709eef4bebce0c92fa036eaf75109d"
+    },
+    {
+      "path": "results/causal_forecasts_v3_gated_bias/calibration_residuals_JPN.npz",
+      "exists": true,
+      "size_bytes": 663148,
+      "sha256": "1a086908b95184769c0e835efaa5dba1215b8a1d320d9e7c018ad5d7ccfa0f4f"
+    },
+    {
+      "path": "data/processed_multiyear/2025/hourly_inputs_AUS.csv",
+      "exists": true,
+      "size_bytes": 932272,
+      "sha256": "776186a99bfdaf42bcc0b0d5e69e3d5eed9d5879a52eee799d4938cfb41389ba"
+    },
+    {
+      "path": "results/causal_forecasts_v3_gated_bias/causal_ridge_AUS.npz",
+      "exists": true,
+      "size_bytes": 33474,
+      "sha256": "794d8f8946695c60dbaede23a9df8408419ced40ee9e47f64ec9fb89acd71597"
+    },
+    {
+      "path": "results/causal_forecasts_v3_gated_bias/calibration_residuals_AUS.npz",
+      "exists": true,
+      "size_bytes": 662813,
+      "sha256": "4427f9c66943a262828e275870919988e59dd894ddcba6eb3bfd8fb48452ce86"
+    },
+    {
+      "path": "data/processed_multiyear/2025/hourly_inputs_NOR.csv",
+      "exists": true,
+      "size_bytes": 915470,
+      "sha256": "6c4c09ecff5a8676d8aa20f053e8c3996e4660375dd0f939b0f592bacaa62f83"
+    },
+    {
+      "path": "results/causal_forecasts_v3_gated_bias/causal_ridge_NOR.npz",
+      "exists": true,
+      "size_bytes": 33528,
+      "sha256": "67e044309d56d8e92478fcf51074eb82356c5cf427a9ccbc9ff56f1267f6e5ad"
+    },
+    {
+      "path": "results/causal_forecasts_v3_gated_bias/calibration_residuals_NOR.npz",
+      "exists": true,
+      "size_bytes": 654412,
+      "sha256": "4891ef94f88dd3dc8c8a7dcc8c2c555190c3ae2a4c75df86c6518b29f0af0c2c"
+    },
+    {
+      "path": "data/processed_multiyear/2025/hourly_inputs_IND.csv",
+      "exists": true,
+      "size_bytes": 845763,
+      "sha256": "f87829cf434bb924f79febedd2ad983cf5813b5a1fe166de4aab421f502c6c50"
+    },
+    {
+      "path": "results/causal_forecasts_v3_gated_bias/causal_ridge_IND.npz",
+      "exists": true,
+      "size_bytes": 33550,
+      "sha256": "a0b504276b1fdb2c139a882ba88bcb5f31a48ab8316461aff2ecbd884124a610"
+    },
+    {
+      "path": "results/causal_forecasts_v3_gated_bias/calibration_residuals_IND.npz",
+      "exists": true,
+      "size_bytes": 657828,
+      "sha256": "6eee807056d03685dc6b67b8a4f5615f58195b607d4eb23013c6593e2e8ef65f"
+    },
+    {
+      "path": "data/processed_multiyear/2025/hourly_inputs_PRT.csv",
+      "exists": true,
+      "size_bytes": 935779,
+      "sha256": "a19d81659a5fcd80c835e909aaccc14b82bddc0d169e7c1bb7f42827e0212276"
+    },
+    {
+      "path": "results/causal_forecasts_v3_gated_bias/causal_ridge_PRT.npz",
+      "exists": true,
+      "size_bytes": 33691,
+      "sha256": "9fe96a82aee18026f7b042df7a3901c0657789c7774e3fd72bf345d96909ef9c"
+    },
+    {
+      "path": "results/causal_forecasts_v3_gated_bias/calibration_residuals_PRT.npz",
+      "exists": true,
+      "size_bytes": 661297,
+      "sha256": "6d14f2f60aee47c66e331c0978a72cd8dc59906aa5a55462f24a27670b99306f"
+    },
+    {
+      "path": "data/processed_multiyear/2025/hourly_inputs_MYS.csv",
+      "exists": true,
+      "size_bytes": 840275,
+      "sha256": "8465f209d6f028fa4f31247330878e8f76854a5c4ff03cfba9b339e76b9523d0"
+    },
+    {
+      "path": "results/causal_forecasts_v3_gated_bias/causal_ridge_MYS.npz",
+      "exists": true,
+      "size_bytes": 33577,
+      "sha256": "17e4623cbd7a67c13da032949b94c664aa283829dd7e30f012d0537a99e86e0f"
+    },
+    {
+      "path": "results/causal_forecasts_v3_gated_bias/calibration_residuals_MYS.npz",
+      "exists": true,
+      "size_bytes": 661056,
+      "sha256": "f38f0c46a0727a3c2d55689d394006f5258c55d1ac47a7df938fb96f1e59b769"
+    },
+    {
+      "path": "data/processed_multiyear/2025/hourly_inputs_GBR.csv",
+      "exists": true,
+      "size_bytes": 924688,
+      "sha256": "3e6387354dfa89eb31a910365efd950d703b13ffade2c07f5c1645569f24897e"
+    },
+    {
+      "path": "results/causal_forecasts_v3_gated_bias/causal_ridge_GBR.npz",
+      "exists": true,
+      "size_bytes": 33478,
+      "sha256": "4d291a3d68fd9e9576bb8e27de58fefb12e9ae56414b2155a763b7406c6fea15"
+    },
+    {
+      "path": "results/causal_forecasts_v3_gated_bias/calibration_residuals_GBR.npz",
+      "exists": true,
+      "size_bytes": 660420,
+      "sha256": "4075dde887bcf5988310c13de86b1a70ffbc7c1f55c40d8e730f92c621963a81"
+    },
+    {
+      "path": "data/processed_multiyear/2025/hourly_inputs_SGP.csv",
+      "exists": true,
+      "size_bytes": 840275,
+      "sha256": "2f56d79266edc81c53fe3f59ff75e856b65170972941c2cfcf60ecb4090d66da"
+    },
+    {
+      "path": "results/causal_forecasts_v3_gated_bias/causal_ridge_SGP.npz",
+      "exists": true,
+      "size_bytes": 33480,
+      "sha256": "6c0662c3eb5631a17cc0c11ec50d8d9101aea02004ed46b717913c4f1d555b70"
+    },
+    {
+      "path": "results/causal_forecasts_v3_gated_bias/calibration_residuals_SGP.npz",
+      "exists": true,
+      "size_bytes": 658661,
+      "sha256": "71831c012aee20d58d4461cf06c42e822d0b8684b00e9b19a59b56f67883502d"
+    },
+    {
+      "path": "data/processed_multiyear/2025/hourly_inputs_KOR.csv",
+      "exists": true,
+      "size_bytes": 940097,
+      "sha256": "e512568e4c05ddc9c4941dd1363a7f982ef5352ad223f1f8943133adf84db900"
+    },
+    {
+      "path": "results/causal_forecasts_v3_gated_bias/causal_ridge_KOR.npz",
+      "exists": true,
+      "size_bytes": 33711,
+      "sha256": "fc240f17332e65de2d6cb84bbac15a57f3c603a5a20f3649c76573d8590341ac"
+    },
+    {
+      "path": "results/causal_forecasts_v3_gated_bias/calibration_residuals_KOR.npz",
+      "exists": true,
+      "size_bytes": 661223,
+      "sha256": "39905c23784430dc8e0400bb9b5760c6e21e25f19ff029c93169ee953027eb73"
+    },
+    {
+      "path": "data/processed_multiyear/2025/hourly_inputs_IDN.csv",
+      "exists": true,
+      "size_bytes": 822617,
+      "sha256": "63c613b7e9372ac7da95b5b16fe7bec7897b3363b1b701fc3c92201c94f75572"
+    },
+    {
+      "path": "results/causal_forecasts_v3_gated_bias/causal_ridge_IDN.npz",
+      "exists": true,
+      "size_bytes": 33511,
+      "sha256": "771cee5f35a5083498ce36d840763e7446983fbd9659d02ac0bd883106f6db41"
+    },
+    {
+      "path": "results/causal_forecasts_v3_gated_bias/calibration_residuals_IDN.npz",
+      "exists": true,
+      "size_bytes": 658176,
+      "sha256": "fcb8bc8f258da8f4522cbf8fb80f3f17e81988f4b3493970ee80e75f14fef9ed"
+    },
+    {
+      "path": "data/processed_multiyear/2025/hourly_inputs_NLD.csv",
+      "exists": true,
+      "size_bytes": 930962,
+      "sha256": "a0c3d49c3f7f4254678e3f2fc72fd007c8827a78c41dce897647c024e01a7d17"
+    },
+    {
+      "path": "results/causal_forecasts_v3_gated_bias/causal_ridge_NLD.npz",
+      "exists": true,
+      "size_bytes": 33337,
+      "sha256": "7296ec8e0bba0fd88b2ee4d62ca045ae5f0b6eb03191eff941565e6486823df5"
+    },
+    {
+      "path": "results/causal_forecasts_v3_gated_bias/calibration_residuals_NLD.npz",
+      "exists": true,
+      "size_bytes": 661769,
+      "sha256": "fc550b784bb2b349b4238175db9c2f3048a1a69b80f4ccbe2a71511703cc3d4c"
+    },
+    {
+      "path": "data/processed_multiyear/2025/hourly_inputs_IRL.csv",
+      "exists": true,
+      "size_bytes": 921443,
+      "sha256": "505940a5a2c6dc3bfecbacd32c4201ebecd3f0fdd358d65d5c292b5d58d6789f"
+    },
+    {
+      "path": "results/causal_forecasts_v3_gated_bias/causal_ridge_IRL.npz",
+      "exists": true,
+      "size_bytes": 33405,
+      "sha256": "4c950a2ef42fdb224dcd8b6fc1468a77376c9dbc5e79dffec18b2c9a37fadaac"
+    },
+    {
+      "path": "results/causal_forecasts_v3_gated_bias/calibration_residuals_IRL.npz",
+      "exists": true,
+      "size_bytes": 661601,
+      "sha256": "d0d2d014042fc8410c82b299af9357d6048f030d58519b3094b25699e0899bcf"
+    },
+    {
+      "path": "data/processed_multiyear/2025/hourly_inputs_CAN.csv",
+      "exists": true,
+      "size_bytes": 901902,
+      "sha256": "624d9ac2b832d9e4487957300a261e9a2df50334c895045c363934fa875bcd03"
+    },
+    {
+      "path": "results/causal_forecasts_v3_gated_bias/causal_ridge_CAN.npz",
+      "exists": true,
+      "size_bytes": 33658,
+      "sha256": "96d007fbd714c5a216b9dd0e5670c3fb5241221a7e83df4ecc34028df5cd57c5"
+    },
+    {
+      "path": "results/causal_forecasts_v3_gated_bias/calibration_residuals_CAN.npz",
+      "exists": true,
+      "size_bytes": 659635,
+      "sha256": "fb8d2c2e2372e775618834c8d6d8c67357ad6c7ee96cc2667f472ee8f9b342f1"
+    }
+  ],
+  "outputs": {
+    "summary": {
+      "path": "results/causal_forecast_evaluation_final_v1/summary_all15_2025_beta010.csv",
+      "rows": 225
+    },
+    "by_horizon": {
+      "path": "results/causal_forecast_evaluation_final_v1/by_horizon_all15_2025_beta010.csv",
+      "rows": 5400
+    }
+  }
+}

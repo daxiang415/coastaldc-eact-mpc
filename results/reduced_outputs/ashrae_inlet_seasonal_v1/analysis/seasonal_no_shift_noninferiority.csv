@@ -1,0 +1,2 @@
+comparison,metric,n_pairs,mean_cost_increase_pct,one_sided_95_upper_pct,noninferiority_margin_pct,noninferiority_passed
+eact_mpc_vs_static_robust_mpc,common_cost,60,0.27988893889745875,0.6426217217365267,1.0,True

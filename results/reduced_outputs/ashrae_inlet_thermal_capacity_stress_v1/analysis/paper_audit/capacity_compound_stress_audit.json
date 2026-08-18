@@ -1,0 +1,19 @@
+{
+  "source_root": "results/ashrae_inlet_thermal_capacity_stress_v1",
+  "condition": "adverse_bias_s1.0, cooling availability 0.5",
+  "n_pairs": 12,
+  "pair_effect_threshold_degc_h": 0.0001,
+  "static_degree_hours_total": 18.18167407056764,
+  "eact_degree_hours_total": 1.5000154474658203,
+  "degree_hour_reduction_pct": 91.74984964726634,
+  "largest_static_pair": "CHN_Q4",
+  "largest_static_pair_share_pct": 50.20054300211076,
+  "largest_pair_reduction_share_pct": 54.71456184334934,
+  "leave_one_out_degree_hour_reduction_pct_min": 83.43328205886631,
+  "leave_one_out_degree_hour_reduction_pct_max": 99.99997703251441,
+  "outputs": [
+    "results/ashrae_inlet_thermal_capacity_stress_v1/analysis/paper_audit/capacity_compound_stress_pairs.csv",
+    "results/ashrae_inlet_thermal_capacity_stress_v1/analysis/paper_audit/capacity_compound_stress_statistical_audit.csv",
+    "results/ashrae_inlet_thermal_capacity_stress_v1/analysis/paper_audit/capacity_compound_stress_leave_one_out.csv"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "status": "complete",
+  "created_utc": "2026-07-25T11:37:13.837331+00:00",
+  "beta_root": "results/ashrae_inlet_beta_ablation_v1",
+  "seasonal_root": "results/ashrae_inlet_seasonal_v1",
+  "bootstrap_samples": 20000,
+  "thermal_metric_schema": "ashrae_a1_inlet_v1",
+  "inputs": [
+    "results/ashrae_inlet_beta_ablation_v1/AUS/manifest_e4_beta0_shift_AUS_primary_shield_off.json",
+    "results/ashrae_inlet_beta_ablation_v1/CAN/manifest_e4_beta0_shift_CAN_primary_shield_off.json",
+    "results/ashrae_inlet_beta_ablation_v1/CHN/manifest_e4_beta0_shift_CHN_primary_shield_off.json",
+    "results/ashrae_inlet_beta_ablation_v1/GBR/manifest_e4_beta0_shift_GBR_primary_shield_off.json",
+    "results/ashrae_inlet_beta_ablation_v1/IDN/manifest_e4_beta0_shift_IDN_primary_shield_off.json",
+    "results/ashrae_inlet_beta_ablation_v1/IND/manifest_e4_beta0_shift_IND_primary_shield_off.json",
+    "results/ashrae_inlet_beta_ablation_v1/IRL/manifest_e4_beta0_shift_IRL_primary_shield_off.json",
+    "results/ashrae_inlet_beta_ablation_v1/JPN/manifest_e4_beta0_shift_JPN_primary_shield_off.json",
+    "results/ashrae_inlet_beta_ablation_v1/KOR/manifest_e4_beta0_shift_KOR_primary_shield_off.json",
+    "results/ashrae_inlet_beta_ablation_v1/MYS/manifest_e4_beta0_shift_MYS_primary_shield_off.json",
+    "results/ashrae_inlet_beta_ablation_v1/NLD/manifest_e4_beta0_shift_NLD_primary_shield_off.json",
+    "results/ashrae_inlet_beta_ablation_v1/NOR/manifest_e4_beta0_shift_NOR_primary_shield_off.json",
+    "results/ashrae_inlet_beta_ablation_v1/PRT/manifest_e4_beta0_shift_PRT_primary_shield_off.json",
+    "results/ashrae_inlet_beta_ablation_v1/SGP/manifest_e4_beta0_shift_SGP_primary_shield_off.json",
+    "results/ashrae_inlet_beta_ablation_v1/USA/manifest_e4_beta0_shift_USA_primary_shield_off.json"
+  ],
+  "outputs": {
+    "beta_validation_summary.csv": {
+      "path": "results/ashrae_inlet_beta_ablation_v1/analysis/beta_validation_summary.csv",
+      "rows": 1
+    },
+    "beta_variant_summary.csv": {
+      "path": "results/ashrae_inlet_beta_ablation_v1/analysis/beta_variant_summary.csv",
+      "rows": 2
+    },
+    "beta_paired_comparisons.csv": {
+      "path": "results/ashrae_inlet_beta_ablation_v1/analysis/beta_paired_comparisons.csv",
+      "rows": 14
+    }
+  }
+}

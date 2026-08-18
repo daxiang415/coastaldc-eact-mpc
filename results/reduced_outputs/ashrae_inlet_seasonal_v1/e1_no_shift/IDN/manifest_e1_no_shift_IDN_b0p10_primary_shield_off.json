@@ -1,0 +1,155 @@
+{
+  "schema_version": 2,
+  "status": "complete",
+  "created_utc": "2026-07-25T09:11:21.501452+00:00",
+  "command": [
+    "python",
+    "scripts/../scripts/evaluate_eact_mpc.py",
+    "--countries",
+    "IDN",
+    "--controllers",
+    "nominal",
+    "static",
+    "eact",
+    "--data-dir",
+    "scripts/../data/processed_multiyear/2025",
+    "--forecast-dir",
+    "scripts/../results/causal_forecasts_v3_gated_bias",
+    "--episode-hours",
+    "168",
+    "--start-timestamps",
+    "2025-01-15T00:00:00",
+    "2025-04-15T00:00:00",
+    "2025-07-15T00:00:00",
+    "2025-10-15T00:00:00",
+    "--horizon",
+    "24",
+    "--maxiter",
+    "20",
+    "--block-hours",
+    "6",
+    "--gamma",
+    "0.995",
+    "--confidence",
+    "0.90",
+    "--constraint-tolerance",
+    "0.0001",
+    "--intervention-weight",
+    "0.0",
+    "--adaptive-beta-floor",
+    "0.10",
+    "--weight-grid",
+    "1.0",
+    "--weight-co2",
+    "2.0",
+    "--weight-total",
+    "0.2",
+    "--weight-smooth",
+    "0.5",
+    "--forecast-stress",
+    "none",
+    "--forecast-stress-scale",
+    "0.0",
+    "--forecast-stress-start-step",
+    "0",
+    "--forecast-stress-seed",
+    "20260717",
+    "--progress-every",
+    "168",
+    "--out-dir",
+    "results/ashrae_inlet_seasonal_v1\\e1_no_shift\\IDN",
+    "--tag",
+    "e1_no_shift_IDN_b0p10_primary_shield_off",
+    "--no-oracle-workload-projection",
+    "--no-thermal-safety-shield"
+  ],
+  "configuration": {
+    "countries": [
+      "IDN"
+    ],
+    "controllers": [
+      "nominal",
+      "static",
+      "eact"
+    ],
+    "episode_hours": 168,
+    "continuous_year": false,
+    "horizon": 24,
+    "maxiter": 20,
+    "block_hours": 6,
+    "gamma": 0.995,
+    "confidence": 0.9,
+    "constraint_tolerance": 0.0001,
+    "intervention_weight": 0.0,
+    "weight_grid": 1.0,
+    "weight_co2": 2.0,
+    "weight_total": 0.2,
+    "weight_smooth": 0.5,
+    "adaptive_beta_floor": 0.1,
+    "oracle_workload_projection": false,
+    "thermal_safety_shield": false,
+    "thermal_metric_schema": "ashrae_a1_inlet_v1",
+    "thermal_state_semantics": "representative_lumped_it_equipment_inlet_air_temperature_proxy",
+    "t_inlet_recommended_min_c": 18.0,
+    "t_inlet_recommended_max_c": 27.0,
+    "t_inlet_allowable_min_c": 15.0,
+    "t_inlet_allowable_max_c": 32.0,
+    "forecast_stress": "none",
+    "forecast_stress_scale": 0.0,
+    "forecast_stress_start_step": 0,
+    "forecast_stress_seed": 20260717,
+    "data_dir": "data/processed_multiyear/2025",
+    "forecast_dir": "results/causal_forecasts_v3_gated_bias",
+    "tag": "e1_no_shift_IDN_b0p10_primary_shield_off"
+  },
+  "starts_by_country": {
+    "IDN": [
+      336,
+      2496,
+      4680,
+      6888
+    ]
+  },
+  "inputs": [
+    {
+      "path": "data/processed_multiyear/2025/hourly_inputs_IDN.csv",
+      "exists": true,
+      "size_bytes": 822617,
+      "sha256": "63c613b7e9372ac7da95b5b16fe7bec7897b3363b1b701fc3c92201c94f75572"
+    },
+    {
+      "path": "results/causal_forecasts_v3_gated_bias/causal_ridge_IDN.npz",
+      "exists": true,
+      "size_bytes": 33511,
+      "sha256": "771cee5f35a5083498ce36d840763e7446983fbd9659d02ac0bd883106f6db41"
+    },
+    {
+      "path": "results/causal_forecasts_v3_gated_bias/calibration_residuals_IDN.npz",
+      "exists": true,
+      "size_bytes": 658176,
+      "sha256": "fcb8bc8f258da8f4522cbf8fb80f3f17e81988f4b3493970ee80e75f14fef9ed"
+    }
+  ],
+  "outputs": {
+    "summary": {
+      "path": "results/ashrae_inlet_seasonal_v1/e1_no_shift/IDN/summary_e1_no_shift_IDN_b0p10_primary_shield_off.csv",
+      "rows": 3
+    },
+    "episodes": {
+      "path": "results/ashrae_inlet_seasonal_v1/e1_no_shift/IDN/episodes_e1_no_shift_IDN_b0p10_primary_shield_off.csv",
+      "rows": 12
+    },
+    "weekly": {
+      "path": "results/ashrae_inlet_seasonal_v1/e1_no_shift/IDN/weekly_e1_no_shift_IDN_b0p10_primary_shield_off.csv",
+      "rows": 12
+    },
+    "hourly": {
+      "path": "results/ashrae_inlet_seasonal_v1/e1_no_shift/IDN/hourly_e1_no_shift_IDN_b0p10_primary_shield_off.csv",
+      "rows": 2016
+    },
+    "solver": {
+      "path": "results/ashrae_inlet_seasonal_v1/e1_no_shift/IDN/solver_e1_no_shift_IDN_b0p10_primary_shield_off.csv",
+      "rows": 2016
+    }
+  }
+}

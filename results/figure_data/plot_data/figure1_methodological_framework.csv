@@ -1,0 +1,14 @@
+stage,order,title,detail
+data_plant,1,Held-out data split,2023-2024 development; 2025 evaluation
+data_plant,2,Exogenous inputs,Workload | wind | SST | carbon
+data_plant,3,Coastal plant,IT load | cooling | grid | offshore wind
+control_loop,1,Causal forecast,Direct 1-24 h prediction
+control_loop,2,Delayed error update,Use residuals only after observations mature
+control_loop,3,Adaptive bound,Horizon bias plus one-sided empirical error
+control_loop,4,Constraint tightening,Convert bound to inlet-temperature margin
+control_loop,5,Receding-horizon MPC,"Shared objective, constraints, model, and solver"
+control_loop,6,Recorded fallback,Shifted feasible plan or safe recovery
+evaluation,1,Normal operation,Prespecified 1% non-inferiority margin
+evaluation,2,Forecast-error stress,Bias | noise | combined error
+evaluation,3,Cooling-reserve stress,"100%, 75%, and 50% conductance"
+evaluation,4,Outcomes,Objective | energy | thermal exposure | solver

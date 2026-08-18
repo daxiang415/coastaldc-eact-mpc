@@ -1,0 +1,2 @@
+status,n_manifests,n_beta0_weeks,n_matched_pairs,thermal_metric_schema
+passed,15,60,60,ashrae_a1_inlet_v1

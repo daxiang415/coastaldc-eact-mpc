@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "status": "complete",
+  "created_utc": "2026-07-25T12:37:54.835645+00:00",
+  "weight_root": "results/ashrae_inlet_weight_sensitivity_v1",
+  "seasonal_root": "results/ashrae_inlet_seasonal_v1",
+  "bootstrap_samples": 20000,
+  "thermal_metric_schema": "ashrae_a1_inlet_v1",
+  "inputs": [
+    "results/ashrae_inlet_weight_sensitivity_v1/high_carbon/adverse_bias/CHN/manifest_e5_high_carbon_adverse_bias_CHN_b0p10_shield_off.json",
+    "results/ashrae_inlet_weight_sensitivity_v1/high_carbon/adverse_bias/JPN/manifest_e5_high_carbon_adverse_bias_JPN_b0p10_shield_off.json",
+    "results/ashrae_inlet_weight_sensitivity_v1/high_carbon/adverse_bias/NOR/manifest_e5_high_carbon_adverse_bias_NOR_b0p10_shield_off.json",
+    "results/ashrae_inlet_weight_sensitivity_v1/high_carbon/none/CHN/manifest_e5_high_carbon_none_CHN_b0p10_shield_off.json",
+    "results/ashrae_inlet_weight_sensitivity_v1/high_carbon/none/JPN/manifest_e5_high_carbon_none_JPN_b0p10_shield_off.json",
+    "results/ashrae_inlet_weight_sensitivity_v1/high_carbon/none/NOR/manifest_e5_high_carbon_none_NOR_b0p10_shield_off.json",
+    "results/ashrae_inlet_weight_sensitivity_v1/high_total/adverse_bias/CHN/manifest_e5_high_total_adverse_bias_CHN_b0p10_shield_off.json",
+    "results/ashrae_inlet_weight_sensitivity_v1/high_total/adverse_bias/JPN/manifest_e5_high_total_adverse_bias_JPN_b0p10_shield_off.json",
+    "results/ashrae_inlet_weight_sensitivity_v1/high_total/adverse_bias/NOR/manifest_e5_high_total_adverse_bias_NOR_b0p10_shield_off.json",
+    "results/ashrae_inlet_weight_sensitivity_v1/high_total/none/CHN/manifest_e5_high_total_none_CHN_b0p10_shield_off.json",
+    "results/ashrae_inlet_weight_sensitivity_v1/high_total/none/JPN/manifest_e5_high_total_none_JPN_b0p10_shield_off.json",
+    "results/ashrae_inlet_weight_sensitivity_v1/high_total/none/NOR/manifest_e5_high_total_none_NOR_b0p10_shield_off.json",
+    "results/ashrae_inlet_weight_sensitivity_v1/low_carbon/adverse_bias/CHN/manifest_e5_low_carbon_adverse_bias_CHN_b0p10_shield_off.json",
+    "results/ashrae_inlet_weight_sensitivity_v1/low_carbon/adverse_bias/JPN/manifest_e5_low_carbon_adverse_bias_JPN_b0p10_shield_off.json",
+    "results/ashrae_inlet_weight_sensitivity_v1/low_carbon/adverse_bias/NOR/manifest_e5_low_carbon_adverse_bias_NOR_b0p10_shield_off.json",
+    "results/ashrae_inlet_weight_sensitivity_v1/low_carbon/none/CHN/manifest_e5_low_carbon_none_CHN_b0p10_shield_off.json",
+    "results/ashrae_inlet_weight_sensitivity_v1/low_carbon/none/JPN/manifest_e5_low_carbon_none_JPN_b0p10_shield_off.json",
+    "results/ashrae_inlet_weight_sensitivity_v1/low_carbon/none/NOR/manifest_e5_low_carbon_none_NOR_b0p10_shield_off.json",
+    "results/ashrae_inlet_weight_sensitivity_v1/low_total/adverse_bias/CHN/manifest_e5_low_total_adverse_bias_CHN_b0p10_shield_off.json",
+    "results/ashrae_inlet_weight_sensitivity_v1/low_total/adverse_bias/JPN/manifest_e5_low_total_adverse_bias_JPN_b0p10_shield_off.json",
+    "results/ashrae_inlet_weight_sensitivity_v1/low_total/adverse_bias/NOR/manifest_e5_low_total_adverse_bias_NOR_b0p10_shield_off.json",
+    "results/ashrae_inlet_weight_sensitivity_v1/low_total/none/CHN/manifest_e5_low_total_none_CHN_b0p10_shield_off.json",
+    "results/ashrae_inlet_weight_sensitivity_v1/low_total/none/JPN/manifest_e5_low_total_none_JPN_b0p10_shield_off.json",
+    "results/ashrae_inlet_weight_sensitivity_v1/low_total/none/NOR/manifest_e5_low_total_none_NOR_b0p10_shield_off.json"
+  ],
+  "outputs": {
+    "weight_validation_summary.csv": {
+      "path": "results/ashrae_inlet_weight_sensitivity_v1/analysis/weight_validation_summary.csv",
+      "rows": 1
+    },
+    "weight_absolute_summary.csv": {
+      "path": "results/ashrae_inlet_weight_sensitivity_v1/analysis/weight_absolute_summary.csv",
+      "rows": 20
+    },
+    "weight_paired_comparisons.csv": {
+      "path": "results/ashrae_inlet_weight_sensitivity_v1/analysis/weight_paired_comparisons.csv",
+      "rows": 140
+    }
+  }
+}

@@ -1,0 +1,4 @@
+algorithm,n_countries,mean_annual_common_cost,mean_annual_e_grid_mwh,mean_annual_co2_kg,mean_annual_e_total_mwh,total_recommended_exceedance_hours,total_recommended_exceedance_degc_h,overall_max_t_inlet_c,total_allowable_exceedance_hours,total_sla_violation_mwh,thermal_safety_override_steps,mean_thermal_safety_override
+eact_mpc,3,11362.481374114031,47847.397220091625,12379035.387690468,80659.4291170662,0.0,1.057073145460663e-06,27.000000740741623,0.0,0.0,0,0.0
+nominal_causal_mpc,3,11309.646961721175,47586.131599299006,12306616.536324741,80287.82448300187,0.0,0.0014961749589907924,27.00009783520549,0.0,0.0,0,0.0
+static_robust_mpc,3,11351.51975035349,47816.9924406014,12369867.82780908,80571.24436624472,0.0,3.1653303089740348e-06,27.000000397860337,0.0,0.0,0,0.0

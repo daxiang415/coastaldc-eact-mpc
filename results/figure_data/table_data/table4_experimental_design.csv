@@ -1,0 +1,7 @@
+evidence_block,development_data,evaluation,paired_units,purpose
+Forecast calibration,2023-2024 hourly records,2025; 15 countries; five variables; 1-24 h horizons,75 country-variable pairs,Interval calibration
+Seasonal operation,Models fixed after 2023-2024,2025; 15 countries x four seasonal weeks; two error conditions,60 weeks per condition,Normal non-inferiority and persistent bias
+Continuous annual,Models fixed after 2023-2024,"2025; CHN, JPN, NOR; no weekly state reset",156 complete weekly blocks,Reset-free confirmation
+Beta ablation,Same model and controller settings,2025; 15 countries x four weeks; persistent bias,60 weeks,Mechanism attribution
+Error and weight stress,Same causal forecasts and objective form,"2025; CHN, JPN, NOR x four high-load weeks",12 weeks per condition,Robustness boundary and weight sensitivity
+Cooling-capacity stress,Same plant model except conductance multiplier,"2025; 100%, 75%, 50%; no shift and persistent bias",12 weeks per condition,Thermal-reserve interaction

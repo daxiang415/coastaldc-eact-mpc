@@ -1,0 +1,4 @@
+analysis,threshold_rule,n_pairs,n_eff_nonzero_pairs,wilcoxon_p_value,mean_pair_reduction,median_pair_reduction,minimum_pair_reduction,maximum_pair_reduction
+Tolerance-adjusted event hours,Event counts already exclude hourly excess <= 1e-4 degC,12,5,0.0625,3.1666666666666665,0.0,0.0,18.0
+Raw cumulative degree-hours,Protocol-defined raw positive excess; no pair-effect threshold,12,12,0.00048828125,1.3901382185918185,1.597798808994355e-05,3.4570818030488226e-07,9.127296423833464
+Degree-hours: solver-scale sensitivity,Exploratory sensitivity: pair effects <= 1e-4 degC h set to zero,12,5,0.0625,1.3901344660730024,0.0,0.0,9.127296423833464
